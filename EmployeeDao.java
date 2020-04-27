@@ -9,7 +9,7 @@ public class EmployeeDao {
 	{
       String query="insert into employee(id,first_name,last_name,uname,pass,address,contact) values(default,?,?,?,?,?,?)";
       Class.forName("com.mysql.cj.jdbc.Driver");
-  	Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/employee","root","2017028");
+  	Connection con=DriverManager.getConnection("jdbc:mysql://localhost:host Id/database name","data base id","password");
   	PreparedStatement st=con.prepareStatement(query);
     st.setString(1, employee.getFirstName());
     st.setString(2, employee.getLastname());
