@@ -21,7 +21,7 @@ public class EmployeeDao {
 	}
 public boolean checkEmployee(String uname,String pass) throws Exception {
 	Class.forName("com.mysql.cj.jdbc.Driver");
-	Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/employee","root","2017028");
+	Connection con=DriverManager.getConnection("jdbc:mysql://localhost:host Id/database name","data base id","password");
 	String query="select * from employee where uname=? and pass=?";
 	PreparedStatement s=con.prepareStatement(query);
 	s.setString(1, uname);
